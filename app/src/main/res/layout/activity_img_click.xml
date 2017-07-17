@@ -67,14 +67,24 @@
 
     </RadioGroup>
 
-    <com.bm.library.PhotoView
-        android:id="@+id/img1"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="65dp"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/ddd" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleX="1.5"
+        android:translationY="100dp"
+        android:scaleY="1.5">
+
+        <com.bm.library.PhotoView
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ddd"/>
+
+    </RelativeLayout>
 
     <com.bm.library.PhotoView
         android:id="@+id/img2"
